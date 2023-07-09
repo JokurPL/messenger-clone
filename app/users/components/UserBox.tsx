@@ -25,7 +25,7 @@ const UserBox: React.FC<UserBoxProps> = ({ user }) => {
   return (
     <div
       onClick={handleClick}
-      className="w-full border-b-2 relative  flex items-center space-x-3 bg-white p-3 hover:bg-neutral-100 hover:translate-x-2 rounded-lg transition cursor-pointer">
+      className="w-full mt-2 border-b-2 relative  flex items-center space-x-3 bg-white p-3 hover:bg-neutral-100 hover:translate-x-2 rounded-lg transition cursor-pointer">
       <Avatar user={user} />
       <div className="min-w-0 flex-1">
         <div className="focus:outline-none">
