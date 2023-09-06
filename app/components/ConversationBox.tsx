@@ -9,6 +9,7 @@ import clsx from "clsx";
 import { FullConversationType } from "../types";
 import useOtherUser from "../hooks/useOtherUser";
 import Avatar from "./Avatar";
+import { pl } from "date-fns/locale";
 
 interface ConversationBoxProps {
   data: FullConversationType;
@@ -75,7 +76,7 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
             </p>
             {lastMessage?.createdAt && (
               <p className="text-xs text-gray-400 font-light">
-                {format(new Date(lastMessage.createdAt), "p")}
+                {format(new Date(lastMessage.createdAt), "p", { locale: pl })}
               </p>
             )}
           </div>
