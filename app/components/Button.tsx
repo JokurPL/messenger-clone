@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 interface ButtonProps {
   type?: "button" | "submit" | "reset" | undefined;
-  fullWidth: boolean;
+  fullWidth?: boolean;
   children?: React.ReactNode;
   onClick?: () => void;
   secondary?: boolean;
@@ -46,7 +46,8 @@ const Button: React.FC<ButtonProps> = ({
         !secondary &&
           !danger &&
           "bg-sky-500 hover:bg-sky-600 focus-visible:outline-sky-600"
-      )}>
+      )}
+    >
       {children}
     </button>
   );
