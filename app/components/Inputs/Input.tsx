@@ -33,8 +33,7 @@ const Input: React.FC<InputProps> = ({
         leading-6
         text-gray-900
       "
-        htmlFor={id}
-      >
+        htmlFor={id}>
         {label}
       </label>
       <div className="mt-2">
